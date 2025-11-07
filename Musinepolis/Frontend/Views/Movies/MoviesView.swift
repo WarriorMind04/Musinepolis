@@ -13,9 +13,11 @@ struct MoviesView: View {
         var body: some View {
             VStack(spacing: 10){
                 Spacer()
-                ScreenTitle(title: "Películas")
+                //ScreenTitle(title: "Películas")
                 
-                CardsCarrusel()
+                //CardsCarrusel()
+                CategoryMovieView()
+                    .environment(ModelDataSoundtrack())
             }
             
         }

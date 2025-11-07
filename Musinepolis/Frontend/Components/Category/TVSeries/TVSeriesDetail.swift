@@ -1,26 +1,25 @@
 //
-//  MovieDetail.swift
+//  TVSeriesDetail.swift
 //  Musinepolis
 //
 //  Created by José Miguel Guerrero Jiménez on 07/11/25.
 //
 
-
 import SwiftUI
 
-struct MovieDetail: View {
+struct TVSeriesDetail: View {
     @Environment(ModelDataSoundtrack.self) var modelData
-    var movie: Movie
+    var serie: TVSerie
 
-    var movieIndex: Int? {
-        modelData.movies.firstIndex(where: { $0.id == movie.id })
+    var serieIndex: Int? {
+        modelData.tvSeries.firstIndex(where: { $0.id == serie.id })
     }
 
     var body: some View {
         ScrollView {
             VStack {
                 // ✅ Usa AsyncImage directamente para cargar desde la URL
-                AsyncImage(url: URL(string: movie.posterPath)) { phase in
+                AsyncImage(url: URL(string: serie.posterPath)) { phase in
                     switch phase {
                     case .empty:
                         ProgressView()
@@ -45,36 +44,34 @@ struct MovieDetail: View {
                 .padding(.bottom, 10)
 
                 VStack(alignment: .leading, spacing: 12) {
-                    Text(movie.title)
+                    Text(serie.name)
                         .font(.largeTitle)
                         .fontWeight(.bold)
 
                     Divider()
 
-                    Text("About \(movie.title)")
+                    Text("About \(serie.name)")
                         .font(.title2)
                         .fontWeight(.semibold)
 
-                    Text(movie.overview)
+                    Text(serie.overview)
                         .font(.body)
                         .foregroundColor(.secondary)
                 }
                 .padding()
             }
         }
-        .navigationTitle(movie.title)
+        .navigationTitle(serie.name)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 #Preview {
     let modelData = ModelDataSoundtrack()
-    if let firstMovie = modelData.movies.first {
-        MovieDetail(movie: firstMovie)
+    if let firstSerie = modelData.tvSeries.first {
+        TVSeriesDetail(serie: firstSerie)
             .environment(modelData)
     } else {
         Text("No movie data available")
     }
 }
-
-

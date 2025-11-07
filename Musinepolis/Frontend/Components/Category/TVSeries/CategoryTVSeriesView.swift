@@ -1,20 +1,22 @@
 //
-//  CategoryView.swift
+//  CategoryTVSeriesView.swift
 //  Musinepolis
 //
-//  Created by José Miguel Guerrero Jiménez on 05/11/25.
+//  Created by José Miguel Guerrero Jiménez on 07/11/25.
 //
 
 import SwiftUI
 
-struct CategoryView: View {
+struct CategoryTVSeriesView: View {
     @Environment(ModelDataSoundtrack.self) var modelData
 
     var body: some View {
+        
         NavigationSplitView {
             List {
+                
                 // ✅ Imagen destacada (Featured)
-                if let featured = modelData.featuredMovies.first {
+                if let featured = modelData.featuredSeries.first {
                     AsyncImage(url: URL(string: featured.posterPath)) { phase in
                         switch phase {
                         case .empty:
@@ -24,7 +26,7 @@ struct CategoryView: View {
                             image
                                 .resizable()
                                 .scaledToFill()
-                                .frame(height: 200)
+                                .frame(height: 500)
                                 .clipped()
                         case .failure:
                             Image(systemName: "film")
@@ -38,16 +40,17 @@ struct CategoryView: View {
                     }
                     .listRowInsets(EdgeInsets())
                 }
+                
 
                 // ✅ Lista por categorías
-                ForEach(modelData.movieCategories.keys.sorted(), id: \.self) { key in
-                    if let items = modelData.movieCategories[key] {
-                        CategoryRowMovies(categoryName: key, items: items)
+                ForEach(modelData.serieCategories.keys.sorted(), id: \.self) { key in
+                    if let items = modelData.serieCategories[key] {
+                        TVSeriesRow(categoryName: key, items: items)
                     }
                 }
                 .listRowInsets(EdgeInsets())
             }
-            .navigationTitle("Movies")
+            .navigationTitle("TV Series")
         } detail: {
             Text("Select a movie")
         }
@@ -55,7 +58,6 @@ struct CategoryView: View {
 }
 
 #Preview {
-    CategoryView()
+    CategoryTVSeriesView()
         .environment(ModelDataSoundtrack())
 }
-

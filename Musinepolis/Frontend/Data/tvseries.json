@@ -1,19 +1,40 @@
 [
   {
     "id": 1,
-    "title": "Stranger Things",
+    "name": "Stranger Things",
+    "firstAirDate": "2016-07-15",
+    "posterPath": "https://resizing.flixster.com/0xxuABVVuzJrUT130WFHKE-irEg=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vNzUyMTFhOTktZTU4Ni00ODkyLWJlYjQtZTgxYTllZmU2OGM0LmpwZw==",
     "overview": "A group of kids uncover supernatural mysteries in their small town.",
-    "posterPath": "https://i.imgur.com/strangerThingsPoster.jpg",
-    "category": "Featured",
-    "albumId": 3
+    "albumId": 3,
+    "category": "Featured Series"
   },
   {
     "id": 2,
-    "title": "The Last of Us",
-    "overview": "Joel and Ellie navigate a post-apocalyptic world ravaged by infection.",
+    "name": "The Last of Us",
+    "firstAirDate": "2023-01-15",
     "posterPath": "https://i.imgur.com/lastofusPoster.jpg",
-    "category": "Top Rated",
-    "albumId": 2
+    "overview": "Joel and Ellie navigate a post-apocalyptic world ravaged by infection.",
+    "albumId": 2,
+    "category": "Top Series"
+  },
+  {
+    "id": 3,
+    "name": "House of the Dragon",
+    "firstAirDate": "2022-08-21",
+    "posterPath": "https://i.imgur.com/houseOfTheDragonPoster.jpg",
+    "overview": "Set 200 years before the events of Game of Thrones, this series tells the story of House Targaryen.",
+    "albumId": 4,
+    "category": "New Releases"
+  },
+  {
+    "id": 4,
+    "name": "The Mandalorian",
+    "firstAirDate": "2019-11-12",
+    "posterPath": "https://i.imgur.com/mandalorianPoster.jpg",
+    "overview": "A lone bounty hunter travels through the outer reaches of the galaxy, far from the authority of the New Republic.",
+    "albumId": 1,
+    "category": "Featured Series"
   }
 ]
+
 
