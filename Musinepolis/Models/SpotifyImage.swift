@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct SpotifyImage: Codable {
+    let url: String
+    let height: Int?
+    let width: Int?
+}

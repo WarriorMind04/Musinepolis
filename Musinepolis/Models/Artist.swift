@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Artist: Codable, Identifiable {
+    let id: String
+    let name: String
+}

@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct Track: Codable, Identifiable {
+    let id: String
+       let name: String
+       let previewURL: String?
+       let album: Album
+       let artists: [Artist]
+}
