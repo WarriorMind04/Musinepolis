@@ -14,7 +14,7 @@ struct TVSerie: Codable, Identifiable {
     let firstAirDate: String
     let posterPath: String
     let overview: String
-    let albumId: Int?  
+    let albumId: String
     var category: Category
        enum Category: String, CaseIterable, Codable {
            case new = "New Releases"

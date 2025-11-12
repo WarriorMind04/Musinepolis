@@ -39,7 +39,7 @@ struct TrackView: View {
                     List(viewModel.tracks) { track in
                         VStack(alignment: .leading, spacing: 5) {
                             HStack {
-                                if let imageUrl = track.album.images.first?.url,
+                                if let imageUrl = track.album?.images.first?.url,
                                    let url = URL(string: imageUrl) {
                                     AsyncImage(url: url) { image in
                                         image.resizable()

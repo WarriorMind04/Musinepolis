@@ -28,6 +28,33 @@ class TracksViewModel: ObservableObject {
             self.tracks = []
         }
     }
+    
+    func fetchTracksAlbum(for albumId: String) async{
+        isLoading = true
+        defer { isLoading = false }
+        do{
+            let results = try await SpotifyAPI.shared.searchAlbumTracks(albumId:  albumId)
+            print("🎵 Tracks encontrados:", results.count)
+            self.tracks = results
+        } catch{
+            print("Error buscando tracks:", error)
+            self.tracks = []
+        }
+    }
+    
+    func fetchTracksPlaylist(for playlistId: String) async{
+        isLoading = true
+        defer { isLoading = false }
+        do{
+            let results = try await SpotifyAPI.shared.searchPlaylistTracks(playlistId: playlistId)
+            print("🎵 Tracks encontrados:", results.count)
+            self.tracks = results
+        } catch{
+            print("Error buscando tracks:", error)
+            self.tracks = []
+        }
+    }
+    
     func playPreview(_ urlString: String?) {
             guard let urlString = urlString, let url = URL(string: urlString) else { return }
             player = AVPlayer(url: url)

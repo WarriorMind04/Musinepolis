@@ -107,7 +107,7 @@ struct TVSeriesDetail: View {
                                 ForEach(viewModel.tracks) { track in
                                     HStack(spacing: 10) {
                                         // Imagen del álbum
-                                        if let imageUrl = track.album.images.first?.url,
+                                        if let imageUrl = track.album?.images.first?.url,
                                            let url = URL(string: imageUrl) {
                                             AsyncImage(url: url) { image in
                                                 image
@@ -154,7 +154,9 @@ struct TVSeriesDetail: View {
         .navigationTitle(serie.name)
         .navigationBarTitleDisplayMode(.inline)
         .task {
-            await viewModel.loadDefaultTracks(for: serie.name)
+            //await viewModel.loadDefaultTracks(for: serie.name)
+            try? await Task.sleep(for: .seconds(0.3))
+            await viewModel.fetchTracksPlaylist(for: serie.albumId)
            }
     }
 }

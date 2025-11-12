@@ -110,7 +110,7 @@ struct GameDetail: View {
                             ForEach(viewModel.tracks) { track in
                                 HStack(spacing: 10) {
                                     // Imagen del álbum
-                                    if let imageUrl = track.album.images.first?.url,
+                                    if let imageUrl = track.album?.images.first?.url,
                                        let url = URL(string: imageUrl) {
                                         AsyncImage(url: url) { image in
                                             image
@@ -155,7 +155,9 @@ struct GameDetail: View {
         .navigationTitle(game.title)
         .navigationBarTitleDisplayMode(.inline)
         .task {
-            await viewModel.loadDefaultTracks(for: game.title)
+            //await viewModel.loadDefaultTracks(for: game.title)
+           try? await Task.sleep(for: .seconds(0.3))
+            await viewModel.fetchTracksPlaylist(for: game.playlistId)
         }
     }
 }

@@ -13,7 +13,7 @@ struct Game: Codable, Identifiable {
     let title: String
     let platform: String
     let releaseDate: String
-    let albumId: Int?
+    
     let posterPath: String
     var category: Category
        enum Category: String, CaseIterable, Codable {
@@ -40,5 +40,6 @@ struct Game: Codable, Identifiable {
             }
         }
     }
+    let playlistId: String
 }
 
