@@ -7,7 +7,7 @@
 
 import SwiftUI
 import AVFoundation
-internal import Combine
+import Combine
 
 @MainActor
 class TracksViewModel: ObservableObject {
@@ -81,5 +81,3 @@ class TracksViewModel: ObservableObject {
     
 }
 
-    
-            

@@ -19,6 +19,9 @@ struct TabBarView: View {
             GamesView().tabItem {
                 Label("Games", systemImage: "gamecontroller.fill")
             }.tag(3)
+            SongSearchView().tabItem {
+                Label("Songs", systemImage: "music.pages.fill")
+            }.tag(4)
         }
     }
 }
