@@ -6,7 +6,8 @@
     "posterPath": "https://resizing.flixster.com/0xxuABVVuzJrUT130WFHKE-irEg=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vNzUyMTFhOTktZTU4Ni00ODkyLWJlYjQtZTgxYTllZmU2OGM0LmpwZw==",
     "overview": "A group of kids uncover supernatural mysteries in their small town.",
     "albumId": "69XhGLFj9vcr4FTyVI95J3",
-    "category": "Featured Series"
+    "category": "Featured Series",
+    "soundtrackName": "Stranger Things Official Playlist"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "posterPath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqo0ALYiYI1NLgN3nvv6in_wRTidqRgPMupA&s",
     "overview": "Joel and Ellie navigate a post-apocalyptic world ravaged by infection.",
     "albumId": "2WZGncC8oDyBFijXsxgaJK",
-    "category": "Top Series"
+    "category": "Top Series",
+    "soundtrackName": "Stranger Things Official Playlist"
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "posterPath": "https://m.media-amazon.com/images/M/MV5BM2QzMGVkNjUtN2Y4Yi00ODMwLTg3YzktYzUxYjJlNjFjNDY1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     "overview": "Set 200 years before the events of Game of Thrones, this series tells the story of House Targaryen.",
     "albumId": "0xjX7lZpORrZNU76MM21in",
-    "category": "New Releases"
+    "category": "New Releases",
+    "soundtrackName": "Stranger Things Official Playlist"
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "posterPath": "https://m.media-amazon.com/images/M/MV5BNWNmMGU0YjktZDZhYy00Y2E3LTk0ZjEtMmU0Y2YwOGJiODUzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     "overview": "A lone bounty hunter travels through the outer reaches of the galaxy, far from the authority of the New Republic.",
     "albumId": "6CSoIRLee2kGWkm2U5kLi0",
-    "category": "Featured Series"
+    "category": "Featured Series",
+    "soundtrackName": "Stranger Things Official Playlist"
   }
 ]
 

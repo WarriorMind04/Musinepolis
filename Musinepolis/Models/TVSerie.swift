@@ -15,6 +15,9 @@ struct TVSerie: Codable, Identifiable {
     let posterPath: String
     let overview: String
     let albumId: String
+    let soundtrackName: String?
+
+    
     var category: Category
        enum Category: String, CaseIterable, Codable {
            case new = "New Releases"
