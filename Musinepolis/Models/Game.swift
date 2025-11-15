@@ -15,6 +15,7 @@ struct Game: Codable, Identifiable {
     let releaseDate: String
     
     let posterPath: String
+    let soundtrackName: String
     var category: Category
        enum Category: String, CaseIterable, Codable {
            case new = "New Releases"

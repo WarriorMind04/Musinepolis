@@ -164,7 +164,7 @@ struct TVSeriesDetail: View {
             try? await Task.sleep(for: .seconds(0.3))
             
             // Buscar por nombre del soundtrack o nombre de la serie
-            let searchQuery = serie.soundtrackName ?? "\(serie.name) soundtrack"
+            let searchQuery = serie.name ?? "\(serie.name) soundtrack"
             await viewModel.fetchSongs(playlistName: searchQuery)
         }
         .onDisappear {

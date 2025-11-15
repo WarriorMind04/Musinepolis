@@ -43,6 +43,15 @@
       "category": "Top Movies",
       "albumID": "0mN9E0N4bRBD7GKktlaRI0",
       "soundtrackName": "Gladiator Soundtrack from the Motion Picture"
+    },
+  {
+      "id": 6,
+      "title": "How to Train Your Dragon",
+      "overview": "A young Viking named Hiccup befriends a dragon and changes the future of his tribe.",
+      "posterPath": "https://m.media-amazon.com/images/M/MV5BODA5Y2M0NjctNWQzMy00ODRhLWE0MzUtYmE1YTAzZjYyYmQyXkEyXkFqcGc@._V1_.jpg",
+      "category": "Top Movies",
+      "albumID": "1440755584",
+      "soundtrackName": "How to Train Your Dragon (Original Motion Picture Soundtrack)"
     }
 ]
 
