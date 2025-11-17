@@ -51,55 +51,6 @@ The app combines local JSON files, Apple Music integration, and a secure backend
 
 ---
 
-## 🗂 Project Structure
-MuseNema/
-├── Components/
-│   ├── Apple Music Comp/
-│   │   ├── AlbumRowView.swift
-│   │   ├── AlbumSearchView.swift
-│   │   ├── PreviewPlayer.swift
-│   │   ├── SongRowView.swift
-│   │   └── SongSearchView.swift
-│   ├── Category/
-│   │   ├── CardsCarrusel.swift
-│   │   ├── SongRowViewww.swift
-│   │   └── TabBarView.swift
-│
-├── Data/
-│   ├── games.json
-│   ├── media.json
-│   ├── movies.json
-│   └── tvseries.json
-│
-├── Models/
-│   ├── MediaModels/
-│   │   ├── Game.swift
-│   │   ├── Movie.swift
-│   │   └── TVSerie.swift
-│   └── SpotifyModels/
-│       ├── Album.swift
-│       ├── Artist.swift
-│       ├── ModelDataSoundtrack.swift
-│       ├── SpotifyImage.swift
-│       ├── Track.swift
-│       ├── MDSoundtrack.swift
-│       └── MediaItem.swift
-│
-├── Services/
-│   ├── MusicServices.swift
-│   ├── NetworkManager.swift
-│   └── SpotifyAPI.swift
-│
-├── ViewModels/
-│   ├── SoundtrackViewModel.swift
-│   └── SpotifyTracksViewModel.swift
-│
-└── Views/
-    ├── Games/
-    ├── Movies/
-    └── Series/
----
-
 ## 🏗️ How It Works
 
 ### 1️⃣ **Local Data**
