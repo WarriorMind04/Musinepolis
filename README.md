@@ -79,4 +79,4 @@ AVPlayer is used to play preview audio clips smoothly.
 
 ### 1. Clone the repo
 ```sh
-git clone https://github.com/yourusername/MuseNema.git
+git clone https://github.com/WarriorMind04/MuseNema.git
